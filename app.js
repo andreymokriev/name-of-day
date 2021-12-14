@@ -7,3 +7,7 @@ dateString = 'Сегодня ' + day + ' ' + month_list[month-1];
 
 dateDiv = document.querySelector(".date");
 dateDiv.innerText = dateString;
+
+let picture = document.querySelector('.pic');
+let dayOfWeek = today.getDay();
+picture.src = "pictures/" + dayOfWeek + ".jpg";
